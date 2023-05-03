@@ -1,0 +1,26 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "offie-space-tileset.tsx",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "offie-space-tileset.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/Users/Super/Downloads",
+    "openFiles": [
+        "offie-space-tileset.tsx"
+    ],
+    "project": "Tilemaps.tiled-project",
+    "recentFiles": [
+        "offie-space-tileset.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx"
+}

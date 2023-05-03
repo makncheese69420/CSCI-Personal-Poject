@@ -1,11 +1,34 @@
 import pygame
-pygame.init()
+import sys
+from player import Player
 
-display = pygame.display.setmode((800,600))
-framerate_clock = pygame.time.Clock()
+class Game:  # Setting up game 
+    def __init__(self): 
+        player_1 = Player((screen_length/ 2,screen_height), screen_length, 5)
+        self.player = pygame.sprite.GroupSingle(player_1)
 
-while True:
-    display.fill(0,0,0)
+    def run(self):
+        self.player.update()
+        self.player.draw(screen)
 
-    framerate_clock.tick(60)
-    pygame.display.update
+if __name__ == '__main__':  #Creating Driver code
+    pygame.init()
+    screen_length = 600
+    screen_height = 600
+
+    screen = pygame.display.set_mode((screen_length, screen_height))
+    clock = pygame.time.Clock()
+    game = Game()
+
+    while True:
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                pygame.quit()
+                sys.exit()
+        
+        screen.fill((30,30,30))
+
+        game.run()
+
+        pygame.display.flip()
+        clock.tick(60) # Setting framerate
