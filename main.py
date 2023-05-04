@@ -74,7 +74,7 @@ class Game:  # Setting up game
 
     def victory_message(self):
         if not self.enemies.sprites():
-            victory_screech = self.font.render('You Win!, You can go home now')
+            victory_screech = self.font.render('You Win!, You can go home now', False, 'White')
             victory_banner = victory_screech.get_rect(center = (screen_length / 2, screen_height/2))
             screen.blit(victory_screech, victory_banner)
 
